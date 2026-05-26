@@ -41,7 +41,7 @@ with col2:
 st.markdown("""
     <style>
     div.stButton > button {
-        background-color: #0066cc;
+        background-color: #ff4b4b;
         color: white;
         border-radius: 8px;
         padding: 8px 20px;
@@ -49,7 +49,7 @@ st.markdown("""
         border: none;
     }
     div.stButton > button:hover {
-        background-color: #0052a3;
+        background-color: #cc3b3b;
         color: white;
     }
     </style>
