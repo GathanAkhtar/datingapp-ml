@@ -51,6 +51,17 @@ st.markdown("""
     div.stButton > button:hover {
         background-color: #0052a3;
         color: white;
+
+    div[data-baseweb="slider"] > div > div {
+        background: #0066cc !important;
+    }
+
+    div[data-inner-slider-handle="true"] {
+        background-color: #0066cc !important;
+    }
+
+    div[role="slider"] {
+        background-color: #0066cc !important;
     }
     </style>
 """, unsafe_allow_html=True)
