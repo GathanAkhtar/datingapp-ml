@@ -52,13 +52,21 @@ st.markdown("""
         background-color: #0052a3;
         color: white;
     }
-    .stSlider [data-baseweb="slider"] [role="progressbar"] {
-        background-color: #0066cc !important;
-    }
-
+    /* Slider thumb (circle) */
     .stSlider [data-baseweb="slider"] [role="slider"] {
         background-color: #0066cc !important;
         border-color: #0066cc !important;
+    }
+
+    /* Slider filled track line */
+    .stSlider [data-testid="stSlider"] div[style*="background"],
+    .stSlider div[data-baseweb="slider"] div[style*="rgb(255"] {
+        background: #0066cc !important;
+    }
+
+    /* Target the red track directly */
+    [data-testid="stSlider"] [style*="background-color: rgb(255, 75, 75)"] {
+        background-color: #0066cc !important;
     }
     </style>
 """, unsafe_allow_html=True)
