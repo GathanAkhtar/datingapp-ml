@@ -38,7 +38,7 @@ with col2:
     message_sent_count = st.slider("Messages Sent", 0, 500, 50)
     emoji_usage_rate = st.slider("Emoji Usage Rate", 0.0, 1.0, 0.5)
 
-if st.button("🔮 Predict!"):
+if st.button("Predict!"):
     # Encode inputs
     gender_map = {'Male': 3, 'Female': 1, 'Non-binary': 4, 'Genderfluid': 2, 'Prefer Not to Say': 5}
     orientation_map = {'Straight': 5, 'Gay': 2, 'Bisexual': 1, 'Pansexual': 4, 'Lesbian': 3, 'Asexual': 0}
