@@ -51,15 +51,6 @@ st.markdown("""
     div.stButton > button:hover {
         background-color: #0052a3;
         color: white;
-
-    /* Style the Sliders (Active track and handle) */
-    div[data-baseweb="slider"] > div > div {
-        background: #0066cc !important;
-    }
-    
-    /* Style the text value bubble over the slider thumb */
-    div[role="slider"] {
-        background-color: #0066cc !important;
     }
     </style>
 """, unsafe_allow_html=True)
