@@ -51,6 +51,16 @@ st.markdown("""
     div.stButton > button:hover {
         background-color: #0052a3;
         color: white;
+
+    /* Slider track (filled portion) */
+    .stSlider [data-baseweb="slider"] [role="progressbar"] {
+        background-color: #0066cc !important;
+    }
+
+    /* Slider thumb (the circle handle) */
+    .stSlider [data-baseweb="slider"] [role="slider"] {
+        background-color: #0066cc !important;
+        border-color: #0066cc !important;
     }
     </style>
 """, unsafe_allow_html=True)
