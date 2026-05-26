@@ -38,6 +38,23 @@ with col2:
     message_sent_count = st.slider("Messages Sent", 0, 500, 50)
     emoji_usage_rate = st.slider("Emoji Usage Rate", 0.0, 1.0, 0.5)
 
+st.markdown("""
+    <style>
+    div.stButton > button {
+        background-color: #0066cc;
+        color: white;
+        border-radius: 8px;
+        padding: 10px 24px;
+        font-size: 16px;
+        border: none;
+    }
+    div.stButton > button:hover {
+        background-color: #0052a3;
+        color: white;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 if st.button("Predict!"):
     # Encode inputs
     gender_map = {'Male': 3, 'Female': 1, 'Non-binary': 4, 'Genderfluid': 2, 'Prefer Not to Say': 5}
